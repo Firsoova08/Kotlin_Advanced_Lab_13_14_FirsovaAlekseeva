@@ -47,14 +47,28 @@ enum class Difficulty
          var total: Int = 10
          var answered: Int = 3
      }
+     fun printQuiz() {
+         question1.let {
+             println(it.questionText)
+             println(it.answer)
+             println(it.difficulty)
+         }
+         println()
+         question2.let {
+             println(it.questionText)
+             println(it.answer)
+             println(it.difficulty)
+         }
+         println()
+         question3.let {
+             println(it.questionText)
+             println(it.answer)
+             println(it.difficulty)
+         }
+         println()
+     }
 
  }
-
-// fun Quiz.StudentProgress.printProgressBar() {
-//     repeat(times = Quiz.answered) { print("") }
-//     repeat(times = Quiz.total - Quiz.answered) { print(" ") }
-//     println()
-//     println(Quiz.progressText)
 
 fun main() {
     val question1 = Question<String>(
@@ -72,12 +86,8 @@ fun main() {
         answer = 28,
         Difficulty.HARD
     )
-//    println(question1.answer)
-//    println(question2.answer)
-//    println(question3.answer)
-//    println(question1.toString())
-//    println("${StudentProgress.answered} of ${StudentProgress.total} answered.")
-//    println("${Quiz.answered} of ${Quiz.total} answered.")
-    //println(Quiz.progressText)
+    val quiz = Quiz()
+    quiz.printQuiz()
+    Quiz().apply { printQuiz() }
     Quiz().printProgressBar()
 }
