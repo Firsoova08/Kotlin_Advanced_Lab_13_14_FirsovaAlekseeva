@@ -25,17 +25,34 @@ fun main() {
 //    solarSystem[3] = "Little Earth"
 //    println(solarSystem[3])
 //    println(newSolarSystem[8])
-        val solarSystem= mutableListOf("Mercury", "Jupiter", "Venus", " Earth", "Mars", "Saturn", "Uranus", "Neptune")
-    println(solarSystem.size)
-    solarSystem.add("Pluto")
-    println(solarSystem.size)
-    println(solarSystem.contains("Pluto"))
-    println("Pluto" in solarSystem)
-    solarSystem.add("Pluto")
-    println(solarSystem.size)
-    solarSystem.remove(element = "Pluto")
-    println(solarSystem.size)
-    println(solarSystem.contains ("Pluto"))
+    val solarSystem= mutableListOf(
+        "Mercury" to 0,
+        "Venus" to 0,
+        "Earth" to 1,
+        "Mars" to 2,
+        "Jupiter" to 79,
+        "Saturn" to 82,
+        "Uranus" to 27,
+        "Neptune" to 14
+    )
+//    println(solarSystem.size)
+//    solarSystem.add("Pluto")
+//    println(solarSystem.size)
+//    println(solarSystem.contains("Pluto"))
+//    println("Pluto" in solarSystem)
+//    solarSystem.add("Pluto")
+//    println(solarSystem.size)
+//    solarSystem.remove(element = "Pluto")
+//    println(solarSystem.size)
+//    println(solarSystem.contains ("Pluto"))
+//    println(solarSystem.size)
+//    solarSystem ["Pluto"] = 5
+//    println(solarSystem.size)
+//    println(solarSystem ["Pluto"])
+//    println(solarSystem.get("Theia"))
+//    solarSystem.remove(key = "Pluto")
+//    println(solarSystem.size)
+
 }
 
 
